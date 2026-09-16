@@ -52,10 +52,10 @@
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
     gtag('config', 'G-S2DHKJN5XR');
-    function trackClick(eventName, placement) {
+    function trackClick(eventName, placement, category) {
       if (typeof gtag === 'function') {
         gtag('event', eventName, {
-          event_category: 'outbound_click',
+          event_category: category || 'outbound_click',
           event_label: placement || 'unknown',
           placement: placement || 'unknown',
           transport_type: 'beacon'
@@ -69,9 +69,9 @@
   </style>
 </head>
 <body>
-  <header class="top"><div class="container nav"><a class="brand" href="/">Vlora Bay Livecam</a><a class="btn" href="https://www.youtube.com/@VloraBayLivecam/live" target="_blank" rel="noopener" onclick="trackClick('youtube_live_click','guide_header')">Watch live in 4K</a></div></header>
+  <header class="top"><div class="container nav"><a class="brand" href="/">Vlora Bay Livecam</a><a class="btn" href="/live/" onclick="trackClick('live_page_click','guide_header','internal_navigation')">Watch live in 4K</a></div></header>
   <main>
-    <section class="hero"><div class="container"><div class="hero-card"><div class="hero-copy"><h1>Vlora Bay Webcam Guide</h1><p>Use this guide to recognise the main landmarks, activity and changing conditions visible from the 24/7 live camera overlooking Vlora Bay on Albania’s Adriatic coast.</p><a class="btn" href="https://www.youtube.com/@VloraBayLivecam/live" target="_blank" rel="noopener" onclick="trackClick('youtube_live_click','guide_hero')">Open the live camera</a></div></div></div></section>
+    <section class="hero"><div class="container"><div class="hero-card"><div class="hero-copy"><h1>Vlora Bay Webcam Guide</h1><p>Use this guide to recognise the main landmarks, activity and changing conditions visible from the 24/7 live camera overlooking Vlora Bay on Albania’s Adriatic coast.</p><a class="btn" href="/live/" onclick="trackClick('live_page_click','guide_hero','internal_navigation')">Open the live camera</a></div></div></div></section>
     <section class="content"><div class="container grid">
       <article class="card wide"><h2>What the camera shows</h2><p>Vlora Bay Livecam is a moving PTZ camera rather than one fixed view. The stream changes angle during the day to show a stronger mix of wide bay scenery, Lungomare and nearby beaches, port and ferry activity, boats, sunsets, city lights and occasional paragliders. The exact frame therefore changes, but the main landmarks below help identify what is on screen.</p></article>
       <article class="card"><h2>Lungomare and the waterfront</h2><p>Lungomare is the long waterfront area visible in several closer camera angles. Depending on the preset, the scene can include palm-lined sections, beaches, buildings, cafés, vehicles and people using the waterfront. These views are usually most active during daylight and summer evenings.</p><div class="image"><img src="20260324_175722.jpg" alt="Lungomare waterfront in Vlore, Albania" loading="lazy" width="800" height="450"></div></article>
@@ -83,7 +83,7 @@
       <article class="card wide"><h2>Best times to watch</h2><h3>Daylight</h3><p>Daytime is best for identifying beaches, boats, ferries, the shoreline and distant landmarks. Visibility can vary considerably with haze and cloud.</p><h3>Late afternoon and sunset</h3><p>Golden hour and sunset often produce the strongest colour and contrast across the bay, particularly toward Sazan Island and the western horizon. The exact sunset view depends on the camera angle and current conditions.</p><h3>Night</h3><p>At night, the most useful views are usually city lights, the waterfront and illuminated harbour activity. Open sea views can become too dark, so the camera prioritises scenes with visible detail.</p></article>
       <article class="card"><h2>Weather and visibility</h2><p>The camera provides a real-time visual check of clouds, rain, wind effects, sea colour and visibility. It is useful for seeing current conditions, but it is not a substitute for an official marine or weather forecast.</p></article>
       <article class="card"><h2>Why the view moves</h2><p>Only one rooftop camera is used. It rotates between selected views so the stream can show more of the bay than a fixed webcam. The long-term aim is intelligent camera direction that stays longer on strong scenes and leaves weak framing quickly.</p></article>
-      <div class="cta wide"><div><strong>Watch Vlora Bay live now</strong><p>Open the full 4K stream on YouTube for live chat and the current camera view.</p></div><a class="btn" href="https://www.youtube.com/@VloraBayLivecam/live" target="_blank" rel="noopener" onclick="trackClick('youtube_live_click','guide_bottom')">Watch live on YouTube</a></div>
+      <div class="cta wide"><div><strong>Watch Vlora Bay live now</strong><p>Open the full 4K stream on YouTube for live chat and the current camera view.</p></div><a class="btn" href="https://www.youtube.com/channel/UCKPyvPeJcrT8vAiifUbay1Q/live" target="_blank" rel="noopener" onclick="trackClick('youtube_live_click','guide_bottom')">Watch live on YouTube</a></div>
     </div></section>
   </main>
   <footer class="footer"><div class="container">© 2026 Vlora Bay Livecam · <a href="/">Home</a> · <a href="https://www.instagram.com/ionian_livecam_4k/" target="_blank" rel="noopener">Instagram</a></div></footer>
