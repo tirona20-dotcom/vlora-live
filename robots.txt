@@ -1,3 +1,5 @@
-﻿User-agent: *
+User-agent: *
 Allow: /
-Sitemap: https://vlora.live/sitemap.xml
+Disallow: /404/
+
+Sitemap: https://vlora.live/sitemap-index.xml
